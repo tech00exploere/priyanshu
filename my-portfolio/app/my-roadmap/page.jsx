@@ -1,7 +1,7 @@
 "use client";
 import { useState } from "react";
 import { roadmap } from "@/data/roadmap";
-import { motion, AnimatePresence } from "framer-motion";
+import { motion, AnimatePresence } from "framer-motion"; 
 
 export default function MyRoadmap() {
   const [completed, setCompleted] = useState([]);
