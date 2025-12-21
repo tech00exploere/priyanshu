@@ -81,7 +81,7 @@ export default function MyResume() {
 
         {/* Download Button */}
         <div className="text-center mt-4">
-          <a
+          <a 
             href="/resume.pdf"
             download
             className="px-6 py-3 bg-black text-white rounded-xl shadow hover:opacity-80 transition"
