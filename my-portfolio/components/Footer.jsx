@@ -64,7 +64,6 @@ export default function Footer() {
 
         </div>
       </div>
-
       {/* Bottom copyright */}
       <div className="text-center text-xs text-[#777] py-4 border-t border-[#1f1f1f]">
         &copy; {new Date().getFullYear()} Priyanshu.dev · All rights reserved.
