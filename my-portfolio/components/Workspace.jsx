@@ -7,7 +7,6 @@ import CoffeeCup from './CoffeeCup'
 import Calendar from './Calendar'
 import FloatingMenu from './FloatingMenu'
 
-
 export default function Workspace() {
 return (
 <div className="relative bg-desk p-8 rounded-2xl shadow-xl" style={{backgroundImage: 'linear-gradient(180deg, rgba(255,255,255,0.02), rgba(0,0,0,0.02))'}}>
