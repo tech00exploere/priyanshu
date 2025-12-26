@@ -29,8 +29,6 @@ export default function Hero() {
         <p className="mt-2 text-lg text-gray-700">
           Data Science Engineer • Web Developer
         </p>
-
-        {/* Buttons */}
         {/* Buttons */}
 <div className="mt-6 flex gap-4 justify-center">
 
