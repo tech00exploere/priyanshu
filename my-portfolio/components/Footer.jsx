@@ -12,8 +12,7 @@ export default function Footer() {
     <footer className="bg-[#0f0f0f] text-[#e5e5e5] border-t border-[#1f1f1f] mt-20">
       <div className="max-w-6xl mx-auto flex flex-col md:flex-row items-center justify-between py-10 px-6 gap-6">
 
-        {/* Left: Branding */}
-        <div className="text-center md:text-left">
+        <div className="text-center md:text-left"> 
           <h2 className="text-lg font-semibold tracking-wide">
             Priyanshu<span className="text-orange-400">.dev</span>
           </h2>
@@ -64,7 +63,7 @@ export default function Footer() {
 
         </div>
       </div>
-      {/* Bottom copyright */}
+      
       <div className="text-center text-xs text-[#777] py-4 border-t border-[#1f1f1f]">
         &copy; {new Date().getFullYear()} Priyanshu.dev · All rights reserved.
       </div>
