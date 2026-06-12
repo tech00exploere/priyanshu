@@ -20,7 +20,7 @@ className="w-full h-full bg-white rounded-lg shadow-lg flex flex-col overflow-hi
 <button className="px-3 py-1 rounded-md border border-gray-200 text-sm">Explore Workspace</button>
 </div>
 </div>
-</div>
+</div> 
 <div className="h-10 bg-gray-100 flex items-center justify-center text-xs text-gray-500">MacBook-style hinge</div>
 </motion.div>
 </div>
