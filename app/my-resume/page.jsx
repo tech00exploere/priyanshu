@@ -157,19 +157,11 @@ export default function MyResume() {
         </motion.div>
 
         {/* Download Button */}
-<<<<<<< HEAD
         <div className="text-center mt-6">
           <a
             href="/image/priyanshuOnWork2.pdf"
             download="Priyanshu_Resume.pdf"
             className="inline-block px-10 py-4 bg-gradient-to-r from-orange-500 to-orange-600 text-white font-bold rounded-xl shadow-lg hover:shadow-2xl hover:-translate-y-1 transition-all duration-300"
-=======
-        <div className="text-center mt-4">
-          <a 
-            href="/resume.pdf"
-            download
-            className="px-6 py-3 bg-black text-white rounded-xl shadow hover:opacity-80 transition"
->>>>>>> 0804e6901ac7b3c8cc5b7d5466884b16fb9f7ee6
           >
             Download PDF Resume
           </a>
