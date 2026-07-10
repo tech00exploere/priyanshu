@@ -36,7 +36,7 @@ export default function ProjectsPage() {
         "Connectly networking platform preview"
       ],
       live: "https://connectly-omega-orpin.vercel.app/",
-      github: "https://connectly-omega-orpin.vercel.app/",
+      github: "https://github.com/tech00exploere/connectly--",
     }
   ];
 
