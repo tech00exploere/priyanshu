@@ -35,7 +35,7 @@ export default function ProjectsPage() {
       alts: [
         "Connectly networking platform preview"
       ],
-      live: "https://connectly-front.vercel.app",
+      live: "https://connectly-omega-orpin.vercel.app/",
       github: "https://connectly-omega-orpin.vercel.app/",
     }
   ];
