@@ -6,8 +6,8 @@ import {
   FaXTwitter,
 } from "react-icons/fa6";
 
-export default function Footer() {
-  return (
+export default function Footer(){
+  return(
     
     <footer className="bg-[#0f0f0f] text-[#e5e5e5] border-t border-[#1f1f1f] mt-20">
       <div className="max-w-6xl mx-auto flex flex-col md:flex-row items-center justify-between py-10 px-6 gap-6">
@@ -20,7 +20,6 @@ export default function Footer() {
             Building ideas into the reality
           </p>
         </div>
-
         {/* Right: Social Icons */}
         <div className="flex gap-6 text-2xl justify-center md:justify-end">
           <a
