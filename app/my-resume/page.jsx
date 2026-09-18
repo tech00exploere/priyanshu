@@ -1,24 +1,38 @@
 "use client";
 import { motion } from "framer-motion";
+import { Download, GraduationCap, Briefcase, Award, Code2, GitPullRequest, Terminal, CheckCircle2 } from "lucide-react";
 
 export default function MyResume() {
   return (
-    <div className="min-h-screen bg-[#fdf8ef] pt-32 pb-16 px-6">
-      <h1 className="text-4xl md:text-5xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-orange-600 to-deepbrown text-center mb-10">
-        My Resume
-      </h1>
-
-      <div className="max-w-5xl mx-auto grid gap-8">
+    <div className="py-20 bg-[#030712] text-slate-100 px-6">
+      <div className="max-w-4xl mx-auto space-y-8">
         
+        {/* Page Header */}
+        <div className="text-center mb-12 space-y-3">
+          <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-lg bg-blue-950/60 border border-blue-800/40 text-cyan-400 text-xs font-mono uppercase tracking-wider">
+            <Terminal size={14} />
+            Curriculum Vitae
+          </div>
+          <h1 className="text-4xl md:text-5xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-white via-slate-100 to-cyan-400">
+            Software Engineering Resume
+          </h1>
+          <p className="text-slate-400 text-base max-w-xl mx-auto">
+            Detailed breakdown of my technical background, open-source work, and competitive programming achievements.
+          </p>
+        </div>
+
         {/* Professional Summary */}
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
-          className="bg-white/80 backdrop-blur-md p-6 md:p-8 rounded-2xl shadow-lg border border-orange-100"
+          className="bg-slate-900/60 backdrop-blur-xl p-6 md:p-8 rounded-2xl shadow-xl border border-blue-950/80 hover:border-cyan-500/30 transition-all space-y-3"
         >
-          <h2 className="text-2xl font-bold text-gray-900 mb-4 border-b pb-2">Professional Summary</h2>
-          <p className="text-gray-700 leading-relaxed text-lg">
-            Software Engineer passionate about building scalable full-stack applications, solving real-world challenges, collaborating in team-driven environments, and contributing to impactful open-source software.
+          <div className="flex items-center gap-3 border-b border-slate-800 pb-3">
+            <Briefcase size={20} className="text-cyan-400" />
+            <h2 className="text-xl font-bold text-white">Professional Summary</h2>
+          </div>
+          <p className="text-slate-300 leading-relaxed text-base">
+            Software Engineer passionate about building scalable full-stack applications, solving real-world challenges, collaborating in team-driven environments, and contributing to impactful open-source software systems.
           </p>
         </motion.div>
 
@@ -27,17 +41,20 @@ export default function MyResume() {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.1 }}
-          className="bg-white/80 backdrop-blur-md p-6 md:p-8 rounded-2xl shadow-lg border border-orange-100"
+          className="bg-slate-900/60 backdrop-blur-xl p-6 md:p-8 rounded-2xl shadow-xl border border-blue-950/80 hover:border-cyan-500/30 transition-all space-y-4"
         >
-          <h2 className="text-2xl font-bold text-gray-900 mb-4 border-b pb-2">Education</h2>
+          <div className="flex items-center gap-3 border-b border-slate-800 pb-3">
+            <GraduationCap size={20} className="text-blue-400" />
+            <h2 className="text-xl font-bold text-white">Education</h2>
+          </div>
           <div className="flex justify-between flex-wrap gap-2">
             <div>
-              <p className="font-bold text-xl text-gray-900">Ajay Kumar Garg Engineering College (AKGEC)</p>
-              <p className="text-gray-700 font-medium">Bachelor of Technology in Computer Science & Engineering (Data Science)</p>
+              <p className="font-bold text-lg text-white">Ajay Kumar Garg Engineering College (AKGEC)</p>
+              <p className="text-cyan-400 text-sm font-medium">Bachelor of Technology in Computer Science & Engineering (Data Science)</p>
             </div>
-            <div className="text-gray-600 font-semibold sm:text-right">
+            <div className="text-slate-400 text-sm font-mono sm:text-right">
               <p>Ghaziabad, India</p>
-              <p>2023 – 2027</p>
+              <p className="text-cyan-400">2023 – 2027</p>
             </div>
           </div>
         </motion.div>
@@ -47,16 +64,37 @@ export default function MyResume() {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.2 }}
-          className="bg-white/80 backdrop-blur-md p-6 md:p-8 rounded-2xl shadow-lg border border-orange-100"
+          className="bg-slate-900/60 backdrop-blur-xl p-6 md:p-8 rounded-2xl shadow-xl border border-blue-950/80 hover:border-cyan-500/30 transition-all space-y-4"
         >
-          <h2 className="text-2xl font-bold text-gray-900 mb-4 border-b pb-2">Technical Skills</h2>
-          <ul className="text-gray-700 space-y-3">
-            <li><span className="font-bold text-gray-900">Programming Languages:</span> C++, C, Java, JavaScript, Python</li>
-            <li><span className="font-bold text-gray-900">Frontend:</span> React.js, Next.js, HTML5, CSS3, Tailwind CSS</li>
-            <li><span className="font-bold text-gray-900">Backend:</span> Node.js, Express.js, REST APIs, JWT Authentication, Google OAuth, Socket.IO</li>
-            <li><span className="font-bold text-gray-900">Databases:</span> MongoDB, MySQL</li>
-            <li><span className="font-bold text-gray-900">Developer Tools:</span> Git, GitHub, Linux, VS Code, Postman</li>
-            <li><span className="font-bold text-gray-900">Core Concepts:</span> Data Structures & Algorithms, Object-Oriented Programming (OOP), DBMS, Operating Systems, Computer Networks, REST API Design, Authentication, Role-Based Access Control</li>
+          <div className="flex items-center gap-3 border-b border-slate-800 pb-3">
+            <Code2 size={20} className="text-indigo-400" />
+            <h2 className="text-xl font-bold text-white">Technical Skills</h2>
+          </div>
+          <ul className="text-slate-300 text-sm space-y-3">
+            <li className="flex flex-col sm:flex-row sm:items-center gap-1 sm:gap-2">
+              <span className="font-bold text-white sm:w-48">Programming Languages:</span>
+              <span className="text-cyan-300 font-mono">C++, C, Java, JavaScript, Python</span>
+            </li>
+            <li className="flex flex-col sm:flex-row sm:items-center gap-1 sm:gap-2">
+              <span className="font-bold text-white sm:w-48">Frontend Frameworks:</span>
+              <span className="text-slate-300">React.js, Next.js, HTML5, CSS3, Tailwind CSS</span>
+            </li>
+            <li className="flex flex-col sm:flex-row sm:items-center gap-1 sm:gap-2">
+              <span className="font-bold text-white sm:w-48">Backend & APIs:</span>
+              <span className="text-slate-300">Node.js, Express.js, REST APIs, JWT Auth, Google OAuth, Socket.IO</span>
+            </li>
+            <li className="flex flex-col sm:flex-row sm:items-center gap-1 sm:gap-2">
+              <span className="font-bold text-white sm:w-48">Databases & Storage:</span>
+              <span className="text-slate-300">MongoDB, MySQL</span>
+            </li>
+            <li className="flex flex-col sm:flex-row sm:items-center gap-1 sm:gap-2">
+              <span className="font-bold text-white sm:w-48">Developer Tools:</span>
+              <span className="text-slate-300 font-mono">Git, GitHub, Linux, VS Code, Postman</span>
+            </li>
+            <li className="flex flex-col sm:flex-row sm:items-center gap-1 sm:gap-2">
+              <span className="font-bold text-white sm:w-48">Core CS Fundamentals:</span>
+              <span className="text-slate-300">Data Structures & Algorithms, OOPs, DBMS, Operating Systems, Computer Networks</span>
+            </li>
           </ul>
         </motion.div>
 
@@ -65,61 +103,43 @@ export default function MyResume() {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.3 }}
-          className="bg-white/80 backdrop-blur-md p-6 md:p-8 rounded-2xl shadow-lg border border-orange-100"
+          className="bg-slate-900/60 backdrop-blur-xl p-6 md:p-8 rounded-2xl shadow-xl border border-blue-950/80 hover:border-cyan-500/30 transition-all space-y-6"
         >
-          <h2 className="text-2xl font-bold text-gray-900 mb-4 border-b pb-2">Open Source Contributions</h2>
-          <div className="space-y-6">
-            <div>
-              <p className="font-bold text-lg text-gray-900">Idurar ERP CRM | <span className="text-orange-600 text-base font-semibold">React.js, Node.js, MongoDB (PR #1464)</span></p>
-              <ul className="list-disc pl-5 mt-2 text-gray-700 space-y-1">
-                <li>Implemented a production-ready CSV Export feature for the DataTable component, resolving Issue #1403.</li>
-                <li>Integrated toolbar actions, handled empty-table states, and improved ESLint compatibility while maintaining clean, production-ready code.</li>
-              </ul>
-            </div>
-            <div>
-              <p className="font-bold text-lg text-gray-900">Supabase Auth | <span className="text-orange-600 text-base font-semibold">Go, Authentication (PR #1322)</span></p>
-              <ul className="list-disc pl-5 mt-2 text-gray-700 space-y-1">
-                <li>Resolved a WebOTP compatibility issue by fixing SMS OTP template newline handling, improving authentication reliability.</li>
-                <li>Added regression tests to strengthen authentication stability and prevent future regressions.</li>
-              </ul>
-            </div>
-            <div>
-              <p className="font-bold text-lg text-gray-900">Socket.IO | <span className="text-orange-600 text-base font-semibold">Developer Documentation (PR #542)</span></p>
-              <ul className="list-disc pl-5 mt-2 text-gray-700 space-y-1">
-                <li>Improved the official documentation by clarifying that server.on() and server.emit() are aliases of the main namespace APIs, resolving Issue #4608.</li>
-                <li>Enhanced API consistency and improved onboarding for developers using the Socket.IO Server API.</li>
-              </ul>
-            </div>
+          <div className="flex items-center gap-3 border-b border-slate-800 pb-3">
+            <GitPullRequest size={20} className="text-teal-400" />
+            <h2 className="text-xl font-bold text-white">Open Source Contributions</h2>
           </div>
-        </motion.div>
-
-        {/* Projects */}
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ delay: 0.4 }}
-          className="bg-white/80 backdrop-blur-md p-6 md:p-8 rounded-2xl shadow-lg border border-orange-100"
-        >
-          <h2 className="text-2xl font-bold text-gray-900 mb-4 border-b pb-2">Projects</h2>
+          
           <div className="space-y-6">
-            <div>
-              <p className="font-bold text-lg text-gray-900 flex justify-between flex-wrap">
-                <span>Kisaan-Setu | <span className="text-orange-600 text-base font-semibold">Next.js, Node.js, Express.js, MongoDB, React.js, AI</span></span>
-              </p>
-              <ul className="list-disc pl-5 mt-2 text-gray-700 space-y-1">
-                <li>Built an AI-powered agritech marketplace connecting farmers, buyers, and companies through a scalable platform with 26+ responsive pages.</li>
-                <li>Implemented JWT + Google OAuth, role-based access control, AI-powered yield analysis, market price prediction, analytics dashboards, and a pseudo-payment workflow.</li>
-                <li>Designed scalable REST APIs and marketplace modules using Next.js, Node.js, Express.js, and MongoDB.</li>
+            <div className="p-4 rounded-xl bg-slate-950/70 border border-slate-800/80 space-y-2">
+              <div className="flex items-center justify-between flex-wrap gap-2">
+                <p className="font-bold text-base text-white">Idurar ERP CRM</p>
+                <span className="px-2.5 py-1 rounded bg-cyan-950 border border-cyan-800 text-cyan-300 text-xs font-mono">React.js, Node.js, MongoDB (PR #1464)</span>
+              </div>
+              <ul className="text-slate-300 text-sm space-y-1.5 list-disc pl-5">
+                <li>Implemented a production-ready CSV Export feature for the DataTable component, resolving Issue #1403.</li>
+                <li>Integrated toolbar actions, handled empty-table states, and improved ESLint compatibility.</li>
               </ul>
             </div>
-            <div>
-              <p className="font-bold text-lg text-gray-900 flex justify-between flex-wrap">
-                <span>Connectly | <span className="text-orange-600 text-base font-semibold">React.js, Node.js, Express.js, MongoDB, Socket.IO</span></span>
-              </p>
-              <ul className="list-disc pl-5 mt-2 text-gray-700 space-y-1">
-                <li>Developed a professional networking platform featuring secure JWT authentication, profile management, and connection requests.</li>
-                <li>Integrated Socket.IO for real-time messaging, typing indicators, and online presence with a scalable backend architecture.</li>
-                <li>Built responsive interfaces and RESTful APIs to deliver a seamless networking experience across devices.</li>
+
+            <div className="p-4 rounded-xl bg-slate-950/70 border border-slate-800/80 space-y-2">
+              <div className="flex items-center justify-between flex-wrap gap-2">
+                <p className="font-bold text-base text-white">Supabase Auth</p>
+                <span className="px-2.5 py-1 rounded bg-cyan-950 border border-cyan-800 text-cyan-300 text-xs font-mono">Go, Authentication (PR #1322)</span>
+              </div>
+              <ul className="text-slate-300 text-sm space-y-1.5 list-disc pl-5">
+                <li>Resolved a WebOTP compatibility issue by fixing SMS OTP template newline handling, improving auth reliability.</li>
+                <li>Added regression tests to strengthen authentication stability.</li>
+              </ul>
+            </div>
+
+            <div className="p-4 rounded-xl bg-slate-950/70 border border-slate-800/80 space-y-2">
+              <div className="flex items-center justify-between flex-wrap gap-2">
+                <p className="font-bold text-base text-white">Socket.IO</p>
+                <span className="px-2.5 py-1 rounded bg-cyan-950 border border-cyan-800 text-cyan-300 text-xs font-mono">Documentation (PR #542)</span>
+              </div>
+              <ul className="text-slate-300 text-sm space-y-1.5 list-disc pl-5">
+                <li>Clarified server.on() and server.emit() API behavior in official developer documentation, resolving Issue #4608.</li>
               </ul>
             </div>
           </div>
@@ -129,43 +149,41 @@ export default function MyResume() {
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
-          transition={{ delay: 0.5 }}
-          className="bg-white/80 backdrop-blur-md p-6 md:p-8 rounded-2xl shadow-lg border border-orange-100"
+          transition={{ delay: 0.4 }}
+          className="bg-slate-900/60 backdrop-blur-xl p-6 md:p-8 rounded-2xl shadow-xl border border-blue-950/80 hover:border-cyan-500/30 transition-all space-y-4"
         >
-          <h2 className="text-2xl font-bold text-gray-900 mb-4 border-b pb-2">Achievements</h2>
-          <ul className="list-disc pl-5 text-gray-700 space-y-2">
-            <li>Solved 400+ Data Structures & Algorithms problems across competitive programming platforms.</li>
-            <li><span className="font-bold text-gray-900">LeetCode:</span> Rating 1600+</li>
-            <li><span className="font-bold text-gray-900">CodeChef:</span> 2⋆ Rated Programmer</li>
-            <li>Open-source contributor to Supabase Auth, Socket.IO, Immich, and Idurar, delivering production-ready bug fixes and feature enhancements.</li>
+          <div className="flex items-center gap-3 border-b border-slate-800 pb-3">
+            <Award size={20} className="text-amber-400" />
+            <h2 className="text-xl font-bold text-white">Achievements & Competitive Programming</h2>
+          </div>
+          <ul className="text-slate-300 text-sm space-y-2.5">
+            <li className="flex items-center gap-2.5">
+              <CheckCircle2 size={16} className="text-cyan-400 flex-shrink-0" />
+              <span>Solved <strong>400+ Data Structures & Algorithms</strong> problems across competitive programming platforms.</span>
+            </li>
+            <li className="flex items-center gap-2.5">
+              <CheckCircle2 size={16} className="text-cyan-400 flex-shrink-0" />
+              <span><strong>LeetCode:</strong> Rating 1600+</span>
+            </li>
+            <li className="flex items-center gap-2.5">
+              <CheckCircle2 size={16} className="text-cyan-400 flex-shrink-0" />
+              <span><strong>CodeChef:</strong> 2★ Rated Programmer</span>
+            </li>
           </ul>
         </motion.div>
 
-        {/* Certifications */}
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ delay: 0.6 }}
-          className="bg-white/80 backdrop-blur-md p-6 md:p-8 rounded-2xl shadow-lg border border-orange-100"
-        >
-          <h2 className="text-2xl font-bold text-gray-900 mb-4 border-b pb-2">Certifications</h2>
-          <ul className="list-disc pl-5 text-gray-700 space-y-2">
-            <li>Complete Machine Learning & Data Science – SkillUp (GeeksforGeeks)</li>
-            <li>DevOps – SkillUp (GeeksforGeeks)</li>
-            <li>Generative AI & ChatGPT – Self-Paced (GeeksforGeeks)</li>
-          </ul>
-        </motion.div>
-
-        {/* Download Button */}
-        <div className="text-center mt-6">
+        {/* Download CTA Button */}
+        <div className="text-center pt-6">
           <a
             href="/image/priyanshuOnWork2.pdf"
             download="Priyanshu_Resume.pdf"
-            className="inline-block px-10 py-4 bg-gradient-to-r from-orange-500 to-orange-600 text-white font-bold rounded-xl shadow-lg hover:shadow-2xl hover:-translate-y-1 transition-all duration-300"
+            className="inline-flex items-center gap-2.5 px-9 py-4 bg-gradient-to-r from-cyan-500 to-blue-600 hover:from-cyan-400 hover:to-blue-500 text-slate-950 font-bold text-base rounded-xl shadow-lg shadow-cyan-500/25 hover:shadow-cyan-500/40 hover:-translate-y-0.5 transition-all duration-300"
           >
+            <Download size={20} />
             Download PDF Resume
           </a>
         </div>
+
       </div>
     </div>
   );

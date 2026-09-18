@@ -7,8 +7,11 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        deepbrown: "#4B2E2E", // adjust to your preferred shade
-        brown: "#6B3E26",
+        darkbg: "#030712",
+        darkcard: "rgba(15, 23, 42, 0.75)",
+        darkborder: "rgba(30, 58, 138, 0.3)",
+        cyanaccent: "#38bdf8",
+        blueaccent: "#3b82f6",
       },
     },
   },

@@ -1,42 +1,82 @@
 "use client";
 
-const skillCategories = {
-  "Frontend :": ["HTML", "CSS", "TailwindCSS", "JavaScript", "React.js", "Next.js"],
-  "Backend :": ["Node.js", "Express"],
-  "Database :": ["SQL", "MongoDB"],
-  "DevOps / Cloud :": ["AWS", "Git"],
-  "Machine Learning / AI :": ["Python", "Data Visualization in Matplotlib and Seaborn","Machine Learning"]
-};
+import { Layout, Server, Database, Cloud, BrainCircuit, Code } from "lucide-react";
+
+const skillCategories = [
+  {
+    title: "Frontend Development",
+    icon: <Layout className="text-cyan-400" size={22} />,
+    skills: ["React.js", "Next.js", "JavaScript (ES6+)", "TailwindCSS", "HTML5 & CSS3"],
+  },
+  {
+    title: "Backend Engineering",
+    icon: <Server className="text-blue-400" size={22} />,
+    skills: ["Node.js", "Express.js", "REST APIs", "JWT Auth", "Socket.IO"],
+  },
+  {
+    title: "Database & Storage",
+    icon: <Database className="text-indigo-400" size={22} />,
+    skills: ["MongoDB", "MySQL", "SQL Queries", "Database Design"],
+  },
+  {
+    title: "DevOps & Cloud Tools",
+    icon: <Cloud className="text-sky-400" size={22} />,
+    skills: ["Git & GitHub", "AWS Basics", "Linux CLI", "Postman", "CI/CD"],
+  },
+  {
+    title: "Machine Learning & AI",
+    icon: <BrainCircuit className="text-teal-400" size={22} />,
+    skills: ["Python", "Machine Learning", "Matplotlib & Seaborn", "Generative AI"],
+  },
+];
 
 export default function Skills() {
   return (
-    <section id="skills" className="py-20 bg-[#fdf8ef] scroll-mt-20">
+    <section id="skills" className="py-24 bg-[#030712] text-slate-100 scroll-mt-16 relative">
       <div className="max-w-6xl mx-auto px-6">
-        <h2 className="text-4xl md:text-5xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-orange-600 to-deepbrown mb-10 text-center">
-          Skills
-        </h2>
-
-        {Object.entries(skillCategories).map(([category, skills], idx) => (
-          <div key={idx} className="mb-8">
-            <h3 className="text-2xl font-semibold text-gray-700 mb-4">{category}</h3>
-            <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4">
-              {skills.map((skill, index) => (
-                <div
-                  key={index}
-                  className="
-                    p-4 border-2 border-transparent rounded-xl shadow-md text-center cursor-pointer font-bold
-                    transition-all duration-300 transform
-                    bg-white text-gray-800
-                    hover:bg-gradient-to-r hover:from-orange-500 hover:to-orange-600 hover:text-white
-                    hover:shadow-xl hover:-translate-y-1
-                  "
-                >
-                  {skill}
-                </div>
-              ))}
-            </div>
+        <div className="text-center mb-16 space-y-3">
+          <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-lg bg-blue-950/60 border border-blue-800/40 text-cyan-400 text-xs font-mono uppercase tracking-wider">
+            <Code size={14} />
+            Technical Stack
           </div>
-        ))}
+          <h2 className="text-4xl md:text-5xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-white via-slate-100 to-cyan-400">
+            Skills & Capabilities
+          </h2>
+          <p className="text-slate-400 text-base max-w-xl mx-auto">
+            Technologies and frameworks I utilize to architect robust software applications.
+          </p>
+        </div>
+
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          {skillCategories.map((cat, idx) => (
+            <div
+              key={idx}
+              className="p-6 rounded-2xl bg-slate-900/60 border border-blue-950/80 hover:border-cyan-500/40 transition-all duration-300 shadow-xl backdrop-blur-xl flex flex-col justify-between group"
+            >
+              <div>
+                <div className="flex items-center gap-3 mb-6 pb-3 border-b border-slate-800/80">
+                  <div className="p-2.5 rounded-xl bg-blue-950/80 border border-blue-800/40">
+                    {cat.icon}
+                  </div>
+                  <h3 className="text-lg font-bold text-slate-100 group-hover:text-cyan-300 transition-colors">
+                    {cat.title}
+                  </h3>
+                </div>
+
+                <div className="flex flex-wrap gap-2.5">
+                  {cat.skills.map((skill, index) => (
+                    <span
+                      key={index}
+                      className="px-3.5 py-1.5 rounded-lg text-xs font-medium bg-slate-950/80 text-slate-300 border border-slate-800/80 hover:border-cyan-400/50 hover:text-cyan-300 transition-all duration-200"
+                    >
+                      {skill}
+                    </span>
+                  ))}
+                </div>
+              </div>
+            </div>
+          ))}
+        </div>
       </div>
     </section>
   );
