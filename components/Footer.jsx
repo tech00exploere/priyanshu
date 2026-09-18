@@ -8,8 +8,8 @@ import {
 
 export default function Footer() {
   return (
-    <footer className="bg-[#030712] text-slate-400 border-t border-blue-950/80 mt-20 relative">
-      <div className="max-w-6xl mx-auto flex flex-col md:flex-row items-center justify-between py-12 px-6 gap-6">
+    <footer className="bg-[#030712] text-slate-400 border-t border-blue-950/80 mt-16 sm:mt-20 relative">
+      <div className="max-w-6xl mx-auto flex flex-col md:flex-row items-center justify-between py-8 sm:py-12 px-4 sm:px-6 gap-6">
 
         <div className="text-center md:text-left space-y-1"> 
           <h2 className="text-xl font-extrabold tracking-tight text-white">
@@ -19,8 +19,9 @@ export default function Footer() {
             Software Development Engineer • Data Science & Machine Learning
           </p>
         </div>
+
         {/* Right: Social Icons */}
-        <div className="flex gap-5 text-xl justify-center md:justify-end">
+        <div className="flex gap-4 sm:gap-5 text-xl justify-center md:justify-end">
           <a
             href="https://github.com/tech00exploere"
             target="_blank"
@@ -53,7 +54,7 @@ export default function Footer() {
         </div>
       </div>
       
-      <div className="text-center text-xs text-slate-500 py-6 border-t border-slate-900">
+      <div className="text-center text-xs text-slate-500 py-5 sm:py-6 px-4 border-t border-slate-900">
         &copy; {new Date().getFullYear()} Priyanshu.dev · Designed & Built with Next.js & Tailwind CSS
       </div>
     </footer>
