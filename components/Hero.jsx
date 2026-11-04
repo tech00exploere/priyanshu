@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 import Link from "next/link";
 import { ArrowRight, FileText, Github, Terminal, Code2, Zap, CheckCircle2 } from "lucide-react";
 
-export default function Hero() {
+export default function Hero() { 
   return (
     <section className="relative w-full flex flex-col items-center justify-center pt-20 sm:pt-24 pb-12 sm:pb-16 px-4 sm:px-6 overflow-hidden bg-[#030712]">
       {/* Background Glow Blobs */}
