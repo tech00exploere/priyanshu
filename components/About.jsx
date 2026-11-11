@@ -80,7 +80,7 @@ export default function About() {
               </div>
             ))}
           </div>
-        </motion.div>
+        </motion.div>//reviised
       </div>
     </section>
   );
