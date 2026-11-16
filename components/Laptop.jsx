@@ -1,7 +1,5 @@
 import React from 'react'
 import { motion } from 'framer-motion'
-
-
 export default function Laptop() {
 return (
 <div className="w-80 h-56 flex items-center justify-center relative">
