@@ -24,7 +24,7 @@ export const projectsData = [
     ],
     images: ["/image/placeholder-project.png"],
     alts: ["Connectly networking platform preview"],
-    live: "https://connectly-front.vercel.app",
+    live: "https://connectly-omega-orpin.vercel.app/",
     github: "https://github.com/tech00exploere/connectly--",
   },
   {
